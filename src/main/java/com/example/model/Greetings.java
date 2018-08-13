@@ -16,12 +16,4 @@ import lombok.ToString;
 public class Greetings {
   private String message;
   private long timestamp;
-
-  /*
-  public Greetings(String message, long timestamp) {
-    super();
-    this.message = message;
-    this.timestamp = timestamp;
-  }
-  */
 }
