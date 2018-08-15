@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '2.0.4.RELEASE'
 		springCloudVersion = 'Finchley.SR1'
 		lombokVersion = '1.18.2'
+		servletApiVersion = '4.0.1'
 	}
 		
 	// Common repositories:	
@@ -27,6 +28,7 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-actuator")
 	compile("org.springframework.boot:spring-boot-starter-webflux")
 	compile("org.springframework.cloud:spring-cloud-starter-stream-kafka")
+	compile("javax.servlet:javax.servlet-api:${servletApiVersion}")
 	// Necessary for @SpringBootApplication(exclude = TestSupportBinderAutoConfiguration.class) 
 	compile('org.springframework.cloud:spring-cloud-stream-test-support')
 	
